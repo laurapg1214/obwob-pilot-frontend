@@ -6,12 +6,11 @@ import './App.css'
 import EventQuestions from './components/EventQuestions'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
       <Routes>
-        <Route path="/event/:eventId" element={ <EventQuestions /> } />
+        <Route path="/" element={<EventQuestions />} />
+        {/* <Route path="/events" element={<EventQuestions />} /> */}
       </Routes>
     </Router>
   )
